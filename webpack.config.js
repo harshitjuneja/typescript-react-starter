@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+
 module.exports = {
     entry: ['@babel/polyfill', './src/index.js'],
     output: {
@@ -5,6 +7,9 @@ module.exports = {
       publicPath: '/',
       filename: 'app.js'
     },
+    plugins: [
+      new webpack.HotModuleReplacementPlugin()
+    ],
     module: {
         rules: [
           {
@@ -18,6 +23,7 @@ module.exports = {
         extensions: ['*', '.js', '.jsx']
       },
     devServer: {
-      contentBase: './dist'
+      contentBase: './dist',
+      hot: true
     }
   };
