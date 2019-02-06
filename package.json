@@ -2,8 +2,8 @@
   "name": "job-portal-frontend",
   "version": "1.0.0",
   "description": "job-portal-frontend",
-  "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +21,17 @@
   "bugs": {
     "url": "https://github.com/harshitjuneja/job-portal-frontend/issues"
   },
-  "homepage": "https://github.com/harshitjuneja/job-portal-frontend#readme"
+  "homepage": "https://github.com/harshitjuneja/job-portal-frontend#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.29.2",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5"
+  }
 }
