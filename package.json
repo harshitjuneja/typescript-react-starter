@@ -1,0 +1,25 @@
+{
+  "name": "job-portal-frontend",
+  "version": "1.0.0",
+  "description": "job-portal-frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshitjuneja/job-portal-frontend.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "job-post-portal",
+    "jest"
+  ],
+  "author": "Harshit Juneja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harshitjuneja/job-portal-frontend/issues"
+  },
+  "homepage": "https://github.com/harshitjuneja/job-portal-frontend#readme"
+}
