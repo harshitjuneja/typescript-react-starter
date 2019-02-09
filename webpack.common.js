@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 var PrettierPlugin = require("prettier-webpack-plugin");
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
     entry: ['@babel/polyfill', './src/index.tsx'],
@@ -8,11 +9,10 @@ module.exports = {
         publicPath: '/',
         filename: 'app.js'
     },
-    // Enable sourcemaps for debugging webpack's output.
-    devtool: "source-map",
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new PrettierPlugin()
+        new PrettierPlugin(),
+        /* new BundleAnalyzerPlugin() */
     ],
     module: {
         rules: [
@@ -41,9 +41,5 @@ module.exports = {
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
         extensions: [".ts", ".tsx", ".js", ".json"]
-    },
-    devServer: {
-        contentBase: './dist',
-        hot: true
     }
 };
