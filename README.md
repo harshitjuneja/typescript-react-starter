@@ -1,2 +1,1 @@
-# job-portal-frontend
-job-portal-frontend
+# typescript-react-starter
